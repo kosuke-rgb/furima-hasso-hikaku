@@ -39,6 +39,29 @@
   "inLanguage": "ja"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ネコポスとゆうパケットはどちらが安いですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "どちらも小型・薄型の荷物向けの配送方法で、料金はほぼ同水準ですが、対応できるサイズ・厚み・重量の上限が微妙に異なります。荷物のサイズによってどちらか一方しか使えない場合もあるため、実際のサイズを入力して比較するのが確実です。" }
+    },
+    {
+      "@type": "Question",
+      "name": "厚みがあると配送方法の選択肢は減りますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい。ネコポスやゆうパケットなどの小型配送は厚み2〜3cm程度までの制限があることが多く、それを超えると宅急便コンパクトや宅急便、ゆうパックといった、より料金の高い配送方法しか選べなくなります。梱包時に厚みを抑えられるかどうかで送料が大きく変わることがあります。" }
+    },
+    {
+      "@type": "Question",
+      "name": "一番安い発送方法はどうやって選べばいいですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "荷物のサイズ・重さ・厚みを入力すると、条件を満たす配送方法の中から料金が安い順に一覧表示されます。同じ荷物でも梱包の仕方次第でサイズ区分が変わり、選べる配送方法や送料が変わることがあるため、発送前に一度確認しておくのがおすすめです。" }
+    }
+  ]
+}
+</script>
 <style>
 :root {
   --bg: #ffffff;
@@ -150,6 +173,19 @@ footer.site-footer {
 }
 footer.site-footer p { margin: 0 0 0.5rem; }
 footer.site-footer a { color: var(--accent); }
+
+.faq-item { border-bottom: 1px solid var(--line); padding: 0.9rem 0; }
+.faq-item:last-child { border-bottom: none; }
+.faq-item summary {
+  cursor: pointer; font-weight: 700; font-size: 0.92rem; list-style: none;
+  position: relative; padding-right: 1.6rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; position: absolute; right: 0; top: 0; color: var(--accent); font-weight: 700; font-size: 1.1rem;
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin: 0.7rem 0 0; color: var(--muted); font-size: 0.88rem; }
 </style>
 </head>
 <body>
@@ -227,6 +263,22 @@ footer.site-footer a { color: var(--accent); }
       data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
+
+  <section>
+    <h2>よくある質問</h2>
+    <details class="faq-item">
+      <summary>ネコポスとゆうパケットはどちらが安いですか？</summary>
+      <p>どちらも小型・薄型の荷物向けの配送方法で、料金はほぼ同水準ですが、対応できるサイズ・厚み・重量の上限が微妙に異なります。荷物のサイズによってどちらか一方しか使えない場合もあるため、実際のサイズを入力して比較するのが確実です。</p>
+    </details>
+    <details class="faq-item">
+      <summary>厚みがあると配送方法の選択肢は減りますか？</summary>
+      <p>はい。ネコポスやゆうパケットなどの小型配送は厚み2〜3cm程度までの制限があることが多く、それを超えると宅急便コンパクトや宅急便、ゆうパックといった、より料金の高い配送方法しか選べなくなります。梱包時に厚みを抑えられるかどうかで送料が大きく変わることがあります。</p>
+    </details>
+    <details class="faq-item">
+      <summary>一番安い発送方法はどうやって選べばいいですか？</summary>
+      <p>荷物のサイズ・重さ・厚みを入力すると、条件を満たす配送方法の中から料金が安い順に一覧表示されます。同じ荷物でも梱包の仕方次第でサイズ区分が変わり、選べる配送方法や送料が変わることがあるため、発送前に一度確認しておくのがおすすめです。</p>
+    </details>
+  </section>
 
   <section class="contact-box">
     <h2>ご意見・追加してほしい機能</h2>
