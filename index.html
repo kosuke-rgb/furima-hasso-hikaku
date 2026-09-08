@@ -16,6 +16,18 @@
   gtag('js', new Date());
   gtag('config', 'G-NKK5TXCQEK');
 </script>
+<script>
+(function () {
+  var fired = false;
+  function fireOnce() {
+    if (fired) return;
+    fired = true;
+    if (typeof gtag === 'function') gtag('event', 'tool_used', { tool_name: document.title });
+  }
+  document.addEventListener('input', fireOnce, true);
+  document.addEventListener('change', fireOnce, true);
+})();
+</script>
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="webtools-labs">
