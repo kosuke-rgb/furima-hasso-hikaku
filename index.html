@@ -235,11 +235,11 @@ footer.site-footer a { color: var(--accent); }
   <header class="masthead">
     <h1>フリマ配送方法・送料比較ツール</h1>
     <p class="lede">ネコポス、ゆうパケット、宅急便、ゆうパック……フリマアプリの配送方法は多すぎて分かりにくい。サイズと重さを入れれば、使える方法を安い順に並べます。2026年10月の料金改定情報も下記に掲載しています。</p>
-    <span class="updated-note">送料 最終確認日: 2026年8月28日</span>
+    <span class="updated-note">送料 最終確認日: 2026年9月27日（日本郵便公式プレスリリースにもとづく、2026年10月1日改定後の料金に対応済み）</span>
   </header>
 
   <div class="notice-box">
-    ⚠️ 日本郵便は2026年10月1日に「ゆうパック」「ゆうパケット」の料金改定を予定しています（ゆうパックは平均約10%値上げ）。下記のゆうゆうメルカリ便の料金は改定前のものです。10月以降に発送する場合は公式サイトでご確認ください。
+    ⚠️ 2026年10月1日、日本郵便の「ゆうパック」「ゆうパケット」の料金が改定されました（本ツールは改定後の新料金に対応済みです）。フリマアプリ経由（ゆうゆうメルカリ便等）の個別契約料金は、本稿執筆時点でアプリ側から別途の改定発表はありませんが、発送前にアプリ内の表示金額もあわせてご確認ください。
   </div>
 
   <section>
@@ -292,14 +292,14 @@ footer.site-footer a { color: var(--accent); }
           <tr><td>ゆうパケットポストmini</td><td>日本郵便</td><td class="num">180円</td><td>専用封筒(A5相当)・2kgまで</td></tr>
           <tr><td>ネコポス</td><td>ヤマト運輸</td><td class="num">210円</td><td>A4・厚さ3cm・1kgまで</td></tr>
           <tr><td>ゆうパケットポスト</td><td>日本郵便</td><td class="num">215円</td><td>A4・厚さ3cm・2kgまで</td></tr>
-          <tr><td>ゆうパケット</td><td>日本郵便</td><td class="num">230円</td><td>A4・厚さ3cm・1kgまで</td></tr>
+          <tr><td>ゆうパケット</td><td>日本郵便</td><td class="num">360円</td><td>A4・厚さ3cm・1kgまで</td></tr>
           <tr><td>宅急便コンパクト</td><td>ヤマト運輸</td><td class="num">520円<br><span style="color:var(--muted);font-size:0.76rem">(専用箱代込み)</span></td><td>専用箱(約20×25×5cm)</td></tr>
           <tr><td>宅急便 60〜160</td><td>ヤマト運輸</td><td class="num">750〜1,700円</td><td>3辺合計60〜160cm・2〜25kg</td></tr>
-          <tr><td>ゆうパック 60〜160</td><td>日本郵便</td><td class="num">750〜1,700円</td><td>3辺合計60〜160cm・25kgまで共通</td></tr>
+          <tr><td>ゆうパック 60〜160</td><td>日本郵便</td><td class="num">840〜2,500円</td><td>3辺合計60〜160cm・25kgまで共通</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="disclaimer">宅急便とゆうパックは同じサイズなら同一料金ですが、<strong>重量の上限が大きく違います</strong>（宅急便60サイズは2kgまで、ゆうパック60サイズは25kgまで）。小さくて重い荷物はゆうパックの方が有利です。</p>
+    <p class="disclaimer">2026年10月の改定により、同じサイズでも<strong>宅急便よりゆうパックの方が高くなりました</strong>。ただし重量の上限が大きく違うため（宅急便60サイズは2kgまで、ゆうパックは全サイズ25kgまで）、小さくても重い荷物は割高でもゆうパックしか選べない場合があります。</p>
   </section>
 
   <section>
@@ -409,7 +409,7 @@ footer.site-footer a { color: var(--accent); }
     { key: 'yu-mini', name: 'ゆうパケットポストmini', carrier: '日本郵便', gate: 'envelope', maxThickness: 2, maxWeight: 2, price: 180, note: '専用封筒(A5相当)に収まる場合のみ' },
     { key: 'nekopos', name: 'ネコポス', carrier: 'ヤマト運輸', gate: 'flat', maxThickness: 3, maxWeight: 1, price: 210, note: 'A4サイズ以内' },
     { key: 'yu-post', name: 'ゆうパケットポスト', carrier: '日本郵便', gate: 'flat', maxThickness: 3, maxWeight: 2, price: 215, note: 'A4サイズ以内' },
-    { key: 'yu-packet', name: 'ゆうパケット', carrier: '日本郵便', gate: 'flat', maxThickness: 3, maxWeight: 1, price: 230, note: 'A4サイズ以内' },
+    { key: 'yu-packet', name: 'ゆうパケット', carrier: '日本郵便', gate: 'flat', maxThickness: 3, maxWeight: 1, price: 360, note: 'A4サイズ以内' },
     { key: 'compact', name: '宅急便コンパクト', carrier: 'ヤマト運輸', gate: 'box', maxThickness: 5, maxWeight: 999, price: 520, note: '専用箱(約20×25×5cm)に収まる場合のみ' },
     { key: 'takkyu-60', name: '宅急便 60', carrier: 'ヤマト運輸', gate: 'size', maxSize: 60, maxWeight: 2, price: 750 },
     { key: 'takkyu-80', name: '宅急便 80', carrier: 'ヤマト運輸', gate: 'size', maxSize: 80, maxWeight: 5, price: 850 },
@@ -417,12 +417,12 @@ footer.site-footer a { color: var(--accent); }
     { key: 'takkyu-120', name: '宅急便 120', carrier: 'ヤマト運輸', gate: 'size', maxSize: 120, maxWeight: 15, price: 1200 },
     { key: 'takkyu-140', name: '宅急便 140', carrier: 'ヤマト運輸', gate: 'size', maxSize: 140, maxWeight: 20, price: 1450 },
     { key: 'takkyu-160', name: '宅急便 160', carrier: 'ヤマト運輸', gate: 'size', maxSize: 160, maxWeight: 25, price: 1700 },
-    { key: 'yupack-60', name: 'ゆうパック 60', carrier: '日本郵便', gate: 'size', maxSize: 60, maxWeight: 25, price: 750 },
-    { key: 'yupack-80', name: 'ゆうパック 80', carrier: '日本郵便', gate: 'size', maxSize: 80, maxWeight: 25, price: 850 },
-    { key: 'yupack-100', name: 'ゆうパック 100', carrier: '日本郵便', gate: 'size', maxSize: 100, maxWeight: 25, price: 1050 },
-    { key: 'yupack-120', name: 'ゆうパック 120', carrier: '日本郵便', gate: 'size', maxSize: 120, maxWeight: 25, price: 1200 },
-    { key: 'yupack-140', name: 'ゆうパック 140', carrier: '日本郵便', gate: 'size', maxSize: 140, maxWeight: 25, price: 1450 },
-    { key: 'yupack-160', name: 'ゆうパック 160', carrier: '日本郵便', gate: 'size', maxSize: 160, maxWeight: 25, price: 1700 }
+    { key: 'yupack-60', name: 'ゆうパック 60', carrier: '日本郵便', gate: 'size', maxSize: 60, maxWeight: 25, price: 840 },
+    { key: 'yupack-80', name: 'ゆうパック 80', carrier: '日本郵便', gate: 'size', maxSize: 80, maxWeight: 25, price: 1150 },
+    { key: 'yupack-100', name: 'ゆうパック 100', carrier: '日本郵便', gate: 'size', maxSize: 100, maxWeight: 25, price: 1480 },
+    { key: 'yupack-120', name: 'ゆうパック 120', carrier: '日本郵便', gate: 'size', maxSize: 120, maxWeight: 25, price: 1810 },
+    { key: 'yupack-140', name: 'ゆうパック 140', carrier: '日本郵便', gate: 'size', maxSize: 140, maxWeight: 25, price: 2160 },
+    { key: 'yupack-160', name: 'ゆうパック 160', carrier: '日本郵便', gate: 'size', maxSize: 160, maxWeight: 25, price: 2500 }
   ];
 
   var sizeInput = document.getElementById('sizeSum');
